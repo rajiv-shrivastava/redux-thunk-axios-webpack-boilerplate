@@ -2,7 +2,10 @@ import 'bootstrap/dist/css/bootstrap.css'
 import React,{Component} from 'react'
 import {push} from 'react-router-redux'
 import {connect} from 'react-redux'
+import Navigationbar from '../components/Navigationbar'
 import {fetchPosts} from '../models/posts'
+import {Link} from  'react-router'
+
 
 class App extends Component
 {
@@ -12,7 +15,11 @@ class App extends Component
 	
 	render () {
 		return (
-			<p> App Home x </p>
+			<div> App 
+
+			<Navigationbar> </Navigationbar> 
+
+			</div>
     )
   }
 }

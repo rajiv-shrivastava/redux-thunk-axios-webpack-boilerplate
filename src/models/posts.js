@@ -4,7 +4,6 @@ import {apiAction} from './requests'
 export default function (state = {}, action = {}) {
   switch (action.type) {
     case 'POSTS_SUCCESS':
-    debugger
       return {
         ...state,
         posts: action.response,
