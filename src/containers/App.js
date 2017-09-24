@@ -12,7 +12,7 @@ class App extends Component
 	
 	render () {
 		return (
-			<p> App Home Page </p>
+			<p> App Home x </p>
     )
   }
 }
