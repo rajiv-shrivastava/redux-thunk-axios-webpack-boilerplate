@@ -5,16 +5,11 @@ import Demo from '../components/Demo'
 import Demo2 from '../components/Demo2'
 
 
-import Navigationbar from '../components/Navigationbar'
-
-
-
 export const routes = (
 	        <Route path="/" component={App}>
-	            <IndexRoute component={Demo}/>
-                <Route path="/Demo" component = {Demo} />
-                                <Route path="/Demo2" component = {Demo2} />
-
+	              <IndexRoute component={Demo}/>
+                  <Route path="/Demo" component = {Demo} />
+                  <Route path="/Demo2" component = {Demo2} />
 	        </Route>
 	    
 

@@ -14,4 +14,3 @@ export default class Demo extends Component
     )
   }
 }
-

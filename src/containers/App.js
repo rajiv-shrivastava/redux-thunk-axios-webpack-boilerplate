@@ -2,9 +2,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import React,{Component} from 'react'
 import {push} from 'react-router-redux'
 import {connect} from 'react-redux'
-import Navigationbar from '../components/Navigationbar'
+import Header from '../components/ui-components/Header'
 import {fetchPosts} from '../models/posts'
-import {Link} from  'react-router'
 
 
 class App extends Component
@@ -15,18 +14,16 @@ class App extends Component
 	
 	render () {
 		return (
-			<div> App 
+			<div> 
+			<Header />
+ 
+			<div className="content">
+           {this.props.children}
+         </div>
 
-      <Link to="/Demo"> demo </Link>
-            <Link to="/Demo2"> demo 2  </Link>
 
 
-        <div className="content">
-          {this.props.children}
-        </div>
-
-			<Navigationbar> </Navigationbar> 
-
+		
 			</div>
     )
   }
