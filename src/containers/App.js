@@ -17,6 +17,14 @@ class App extends Component
 		return (
 			<div> App 
 
+      <Link to="/Demo"> demo </Link>
+            <Link to="/Demo2"> demo 2  </Link>
+
+
+        <div className="content">
+          {this.props.children}
+        </div>
+
 			<Navigationbar> </Navigationbar> 
 
 			</div>

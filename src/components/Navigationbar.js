@@ -21,12 +21,6 @@ export default class Navigationbar extends Component
         <NavItem eventKey={3} >NavItem 3 content</NavItem>
       </Nav>
 
-      <Link to="/Demo"> Home </Link>
-
-        <div className="content">
-          {this.props.children}
-        </div>
-
 
       </div>
     )

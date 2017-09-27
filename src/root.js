@@ -1,8 +1,9 @@
 import React, {PropTypes} from 'react'
 import {Provider} from 'react-redux'
-import {Router} from 'react-router'
+import {Route,Router, browserHistory} from 'react-router'
 import {routes} from './routes/index'
-import {hashHistory} from 'react-router'
+import Navigationbar from './components/Navigationbar'
+
 
 export default React.createClass({
   propTypes: {
@@ -15,9 +16,9 @@ export default React.createClass({
 
     return (
       <Provider store={store}>
-        <Router history={hashHistory}>
-          {routes}
-        </Router>
+        <Router routes={routes} history={browserHistory}>
+
+      </Router>     
       </Provider>
     )
   }
