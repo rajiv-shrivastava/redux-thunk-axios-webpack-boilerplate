@@ -21,16 +21,13 @@ constructor(props) {
     })
  } 
 
-
- 
   render () {
     return (
-      
      <Nav bsStyle="tabs" activeKey={this.state.activeTab} onSelect={this.handleSelect}>
-        <NavItem eventKey="1" href=" "> <Link to="/Demo"> demo  </Link></NavItem>
-        <NavItem eventKey="2" title="Item"><Link to="/Demo2"> demo 2 </Link></NavItem>
-        <NavItem eventKey="3">NavItem 3 content</NavItem>
-      </Nav>
+      <NavItem eventKey="1" href=" "> <Link to="/Demo"> demo  </Link></NavItem>
+      <NavItem eventKey="2" title="Item"><Link to="/Tabsdash"> Tabsdash </Link></NavItem>
+      <NavItem eventKey="3">NavItem 3 content</NavItem>
+     </Nav>
 
     )
   }

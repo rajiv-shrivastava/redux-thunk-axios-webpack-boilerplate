@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import {Link} from  'react-router';
 import ReusableTabs from './ReusableTabs'
+import Tabsdash from '../Tabsdash';
+
 export default class Header extends Component
 {
 
@@ -36,14 +38,7 @@ constructor(props) {
        </ul>
       </div>
     </nav>
-
-    <ReusableTabs />
-
-      
-
       </div>
-
-
     )
   }
 }
