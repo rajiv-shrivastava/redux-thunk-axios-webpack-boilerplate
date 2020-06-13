@@ -1,4 +1,3 @@
-import browser from 'bowser'
 import {apiAction} from './requests'
 
 export default function (state = {}, action = {}) {

@@ -4,15 +4,12 @@
 
 /*global __VERSION__*/
 import 'babel-polyfill'
-import 'isomorphic-fetch'
 import axios from 'axios'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {syncHistoryWithStore} from 'react-router-redux'
 import history from './history'
 import store from './store'
-
-console.log('Dashboard version:', __VERSION__)
 
 // Create an enhanced history that syncs navigation events with the store
 const syncedHistory = syncHistoryWithStore(history, store)
@@ -32,8 +29,7 @@ if (module.hot) {
   // Support hot reloading of components
   // and display an overlay for runtime errors
   const renderError = error => {
-    const RedBox = require('redbox-react')
-    ReactDOM.render(<RedBox error={error}/>, rootEl)
+    return {error}
   }
   const reRender = () => {
     try {
