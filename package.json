@@ -60,7 +60,7 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.18.1",
     "bootstrap": "^3.3.7",
     "normalizr": "^2.0.0",
     "react-router-redux": "^4.0.8",
