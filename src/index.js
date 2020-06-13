@@ -7,12 +7,9 @@ import 'babel-polyfill'
 import axios from 'axios'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {syncHistoryWithStore} from 'react-router-redux'
 import history from './history'
 import store from './store'
 
-// Create an enhanced history that syncs navigation events with the store
-const syncedHistory = syncHistoryWithStore(history, store)
 
 // Using module.hot as the only hook to hot reloading. Not using react-hot-loader or any such plugings.
 // module.hot is a webpack thing.
@@ -22,7 +19,7 @@ const rootEl = document.getElementById('outlet')
 const render = () => {
   // have to use require(..).default instead of import to re-evaluate the root element with all hot updates
   const Root = require('./root').default
-  ReactDOM.render(<Root store={store} history={syncedHistory}/>, rootEl)
+  ReactDOM.render(<Root store={store} history={history}/>, rootEl)
 }
 
 if (module.hot) {
