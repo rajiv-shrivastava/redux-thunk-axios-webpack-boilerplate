@@ -1,7 +1,7 @@
 
 # Setting up on a new machine
 
-npm update npm -g
+npm update 
 
 npm install
 
