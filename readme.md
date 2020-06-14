@@ -7,11 +7,11 @@
 <p> redux-thunk ( Async redux actions handler) </p>
 <p> redux-promise-middleware( Handle api calls with promise having states ==> LOADING , SUCCESS  , FAILURE)  </p>
 
-<p> Setup the boilerplate on new machine run the following commands </p>
+<h3> Setup the boilerplate on new machine run the following commands </h3>
 
 
-<p> npm i </p>
+<p> <code> npm i </code> </p>
 
-<p> npm start </p>
+<p> <code> npm start </code> </p>
 
 </b>
