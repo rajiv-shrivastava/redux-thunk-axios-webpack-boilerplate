@@ -1,6 +1,12 @@
 #sample app for getting started with React Js
 
-# includes react,redux,webpack,axios,thunk,redux-promise-middleware
+# includes 
+# react (Ui lib),
+# redux (State Manager for app data),
+# webpack (Module bundler for assets),
+# axios ( Http lib for apis),
+# redux-thunk ( Anyc redux actions handler),
+# redux-promise-middleware( Handle api calls with promise with states loading , success and failure)
 
 
 #React + Redux + Webpack + Axios
