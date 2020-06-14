@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader/root';
-import HelloWorld from './components/hello-world';
+import Home from './components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   render() {
-    return <div> hello </div>
+    return <div> <Home title={"Sample React redux webpack axios thunk and promise middleware"}/> </div>
   }
 }
 

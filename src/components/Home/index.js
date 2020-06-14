@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import style from './hello-world.css';
+import style from './home.css';
 import { Button } from 'reactstrap';
 import { connect } from "react-redux";
 import {fetchUsers} from '../../actions/productActions'
