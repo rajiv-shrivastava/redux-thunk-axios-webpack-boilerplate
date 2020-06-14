@@ -4,6 +4,8 @@ import style from './home.css';
 import { Button } from 'reactstrap';
 import { connect } from "react-redux";
 import {fetchUsers} from '../../actions/productActions'
+import {Link
+} from "react-router-dom";
 
 
 class HelloWorld extends React.Component {
@@ -16,9 +18,10 @@ class HelloWorld extends React.Component {
 	render(){
 		   return(
 			  <div>
-              {this.props.title}
+              {this.props.title}              
               i am home page with reactstrap design
               <Button color="danger">reactstrap design</Button>
+              <p> <Link to={"/sampleroute"} > Sample react router link</Link> </p>
            </div>
 			)
 	}

@@ -9,6 +9,7 @@ import {
 
 import Home from '../components/Home/';
 import AuthDemo from '../components/AuthDemo/';
+import SampleRoute from '../components/SampleRoute/';
 import App404Component from '../components/App404Component/';
 import { hot } from 'react-hot-loader/root';
 
@@ -38,6 +39,7 @@ function Routes() {
           {/* <PrivateRoute authed={this.state.authed} path='/authdemo' component={AuthDemo} /> */}
           {/* in order to make a route private */}
 
+          <Route exact path='/sampleroute' component={SampleRoute} />
           <PrivateRoute authed={false} path='/authdemo' component={AuthDemo} />
 
         </Switch>
