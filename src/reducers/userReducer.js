@@ -5,19 +5,19 @@ const INITIAL_STATE = {
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case `FETCH_PRODUCTS_PENDING`:
+    case `FETCH_PRODUCTS_LOADING`:
       return { 
         ...state, 
         usersLoading: true 
       }
-    case `FETCH_PRODUCTS_FULFILLED`:
+    case `FETCH_PRODUCTS_SUCCESS`:
       return { 
         ...state, 
         users: action.payload.data,
         usersLoading: false
 
     }
-    case `FETCH_PRODUCTS_REJECTED`:
+    case `FETCH_PRODUCTS_ERROR`:
       return { 
         ...state, 
         users: [],

@@ -14,7 +14,7 @@ const createStoreWithMiddleware = compose(
   //   thunkMiddleware,
   //   promiseMiddleware({ promiseTypeSuffixes: ["LOADING", "SUCCESS", "ERROR"] })
   // )
-  applyMiddleware(createPromise(), thunk, createLogger()),
+  applyMiddleware(createPromise({ promiseTypeSuffixes: ["LOADING", "SUCCESS", "ERROR"] }), thunk, createLogger()),
   window.devToolsExtension ? window.devToolsExtension() : f => f
 )(createStore);
 
