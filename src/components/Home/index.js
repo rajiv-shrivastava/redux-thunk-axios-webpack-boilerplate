@@ -17,7 +17,8 @@ class HelloWorld extends React.Component {
 		   return(
 			  <div>
               {this.props.title}
-              <Button color="danger">i am reactstrap!</Button>
+              i am home page with reactstrap design
+              <Button color="danger">reactstrap design</Button>
            </div>
 			)
 	}
