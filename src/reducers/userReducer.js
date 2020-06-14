@@ -23,7 +23,6 @@ export default (state = INITIAL_STATE, action) => {
         users: [],
         usersLoading: false,
         userError: 'Error in fetching users'
-
     }
       
     default:

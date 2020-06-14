@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   render() {
-    return <HelloWorld title="Hello from React webpack" />;
+    return <div> hello </div>
   }
 }
 
