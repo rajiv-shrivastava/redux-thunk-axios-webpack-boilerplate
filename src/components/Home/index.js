@@ -8,7 +8,7 @@ import {Link
 } from "react-router-dom";
 
 
-class HelloWorld extends React.Component {
+class Home extends React.Component {
 	componentDidMount(){
 		this.props.fetchUsers()
 
@@ -27,7 +27,7 @@ class HelloWorld extends React.Component {
 	}
 }
 
-HelloWorld.propTypes = {
+Home.propTypes = {
   title: PropTypes.string,
 };
 
@@ -41,4 +41,4 @@ const mapStateToProps = (state) => {
 export default connect(
   mapStateToProps,
   { fetchUsers }
-)(HelloWorld);
+)(Home);
