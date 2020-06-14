@@ -1,4 +1,4 @@
-#sample app for getting started with React Js
+# Sample app for getting started with React Js
 
 #includes 
 #react (Ui lib),
@@ -8,11 +8,7 @@
 #redux-thunk ( Anyc redux actions handler),
 #redux-promise-middleware( Handle api calls with promise with states loading , success and failure)
 
-
-# React + Redux + Webpack + Axios
-
 # npm i
-
 
 # npm start
 
