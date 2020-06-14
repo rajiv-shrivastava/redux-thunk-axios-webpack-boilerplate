@@ -10,8 +10,8 @@
 <h3> Setup the boilerplate on new machine run the following commands </h3>
 
 
-<p> <h3> <code> npm install </code> </h3> </p>
+<p> <h4> <code> npm install </code> </h4> </p>
 
-<p> <h3> <code> npm start </code> </h3> </p>
+<p> <h4> <code> npm start </code> </h4> </p>
 
 </b>
