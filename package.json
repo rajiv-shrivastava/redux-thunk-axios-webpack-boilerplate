@@ -55,6 +55,7 @@
   "dependencies": {
     "@babel/plugin-transform-react-constant-elements": "7.10.1",
     "@babel/plugin-transform-react-inline-elements": "7.10.1",
+    "axios": "^0.19.2",
     "babel-plugin-transform-react-pure-class-to-function": "1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "bootstrap": "^4.5.0",
@@ -68,7 +69,9 @@
     "react-router-redux": "^4.0.8",
     "reactstrap": "^8.4.1",
     "redux": "^4.0.5",
+    "redux-localstorage": "^0.4.1",
     "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^6.1.2",
     "redux-thunk": "^2.3.0"
   },
   "resolutions": {
