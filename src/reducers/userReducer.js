@@ -4,7 +4,6 @@ const INITIAL_STATE = {
 };
 
 export default (state = INITIAL_STATE, action) => {
-  console.log('222222222222222222222',action.payload ? action.payload.data : '')
   switch (action.type) {
     case `FETCH_PRODUCTS_PENDING`:
       return { 
@@ -17,7 +16,15 @@ export default (state = INITIAL_STATE, action) => {
         users: action.payload.data,
         usersLoading: false
 
-      }
+    }
+    case `FETCH_PRODUCTS_REJECTED`:
+      return { 
+        ...state, 
+        users: [],
+        usersLoading: false,
+        userError: 'Error in fetching users'
+
+    }
       
     default:
       return state;
