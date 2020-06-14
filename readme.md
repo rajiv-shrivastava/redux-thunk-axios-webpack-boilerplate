@@ -5,10 +5,11 @@ react (Ui lib) , Redux (State Manager for app data), Webpack (Module bundler for
 redux-thunk ( Anyc redux actions handler) ,
 redux-promise-middleware( Handle api calls with promise with states loading , success and failure) 
 
-#Setup the boilerplate on new machine run the following commands
+<p> Setup the boilerplate on new machine run the following commands </p>
+
+
+<p> npm i </p>
+
+<p> npm start </p>
+
 </b>
-
-# npm i
-
-# npm start
-
