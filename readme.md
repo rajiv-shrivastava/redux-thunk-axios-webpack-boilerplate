@@ -1,6 +1,6 @@
 #sample app for getting started with React Js
 
-# includes 
+#includes 
 # react (Ui lib),
 # redux (State Manager for app data),
 # webpack (Module bundler for assets),
