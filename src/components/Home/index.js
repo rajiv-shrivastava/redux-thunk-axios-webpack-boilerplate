@@ -11,17 +11,19 @@ import {Link
 class Home extends React.Component {
 	componentDidMount(){
 		this.props.fetchUsers()
-
-		console.log('this.props.users',this.props.users)
 	}	
 
 	render(){
+		let {users} = this.props
+
 		   return(
 			  <div>
               {this.props.title}              
               i am home page with reactstrap design
               <Button color="danger">reactstrap design</Button>
               <p> <Link to={"/sampleroute"} > Sample react router link</Link> </p>
+              <h3> Sample Date from jsonplaceholder mock apis :- </h3>
+              <p> {users && users.length > 0 ? users[0].id: ''} {users && users.length > 0 ? users[0].name: ''} </p>
            </div>
 			)
 	}
@@ -33,8 +35,9 @@ Home.propTypes = {
 
 
 const mapStateToProps = (state) => {
+	console.log("state.users",state.userReducer.users)
   return {
-    users: state.users || [],
+    users: state.userReducer.users || [],
   };
 }
 
